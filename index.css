@@ -1,0 +1,220 @@
+@import url('http://fonts.cdnfonts.com/css/rotterland');
+@import'https://fonts.googleapis.com/css?family=Lato';
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-family: 'Georgia', sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+.container{
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.center {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+/* End Non-Essential  */
+
+.property-card {
+  height: 15em;
+  width: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  margin: 3%;
+}
+
+.property-image, .flag {
+  height: 11em;
+  width: 20em;
+  /* padding: 1em 2em; */
+  position: Absolute;
+  top: 0px;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  /* background-image: url(https://restcountries.eu/data/afg.svg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description {
+  background-color: #FAFAFC;
+  height: 9em;
+  width: 20em;
+  position: absolute;
+  bottom: 0em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+/* Social Icons */
+
+.property-social-icons {
+  width: 1em;
+  height: 1em;
+  background-color: black;
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+  height: 0em;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+  height: 18em;
+}
+
+.property-card:hover .property-social-icons {
+  background-color: white;
+}
+
+
+ .active-index {
+  color: #000;
+  font-family: 'Georgia', sans-serif;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+#title {
+  display: inline-block;
+  color: #000;
+  font-family: 'Georgia', sans-serif;
+  font-size: 15pt;
+}
+
+/* .property-image-content {
+  position: relative;
+  bottom: 0px;
+  margin-top: 10%;
+} */
+
+
+.header {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: center;
+}
+
+h2 {
+  font-weight:normal;
+  color: #000;
+  font-family: 'Georgia', sans-serif;
+  text-align: center;
+  padding: 1%;
+  font-size: 25px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.paragraph {
+width: 100%;
+position: absolute;
+color: #000;
+font-family: "Lato", Arial, sans-serif;
+padding: 0% 1% 0% 1%;
+text-align: justify;
+}
+.text {
+font-size: 15px;
+}
+
+.search-container {
+  display: flex;
+  margin-left: 14px;
+  border-radius: 50px;
+}
+#myBtnContainer{
+  float: left;
+  margin-top: 15px;
+  margin-left: 14px;
+  font-style: italic;
+  font-size: 18px;
+}
+.button{
+  width: 129px;
+  margin: 0px 10px 0px 10px;
+  transform: translatez(0);
+  text-decoration: none;
+  font-size: 15px;
+	font-weight: normal;
+	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+  text-align: center;
+  /* border: none; */
+	border-radius: 50px; 
+  padding: 12px;
+  color: white;
+  background: #b0d1da;
+  transition: all 0.2s ease-out 0s;
+ 
+}
+
+.bttn-view{
+  color: #000;
+  text-decoration: none;
+  margin-top: 200px;
+  text-align: center;
+}
