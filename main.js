@@ -71,14 +71,6 @@ $(document).ready(function () {
     });
 
 
-    var $btns = $('.button').click(function () {
-
-      var data = $(this).attr("data-attr");
-      $(".property-card").filter(function () {
-        $(this).toggle($(this).text().toLowerCase().indexOf(data) > -1)
-      });
-    });
-
 
   });
 
